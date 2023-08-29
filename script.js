@@ -33,11 +33,11 @@ console.log("Sorted array:", sortedArr);
 // Bubble Sort
 
 function bubbleSort(arr) {
-    const x = arr.length;
+    const n = arr.length;
 
-    for (let i = 0; i < x - 1; i++) {
+    for (let i = 0; i < n - 1; i++) {
         // Last i elements are already in place
-        for (let j = 0; j < x - i - 1; j++) {
+        for (let j = 0; j < n - i - 1; j++) {
             // Compare adjacent elements and swap if needed
             if (arr[j] > arr[j + 1]) {
                 const temp = arr[j];
@@ -59,9 +59,9 @@ console.log("Sorted array:", sortedArray);
 // Insertion Sort 
  
 function insertionSort(arr) {
-    const y = arr.length;
+    const n = arr.length;
 
-    for (let i = 1; i < y; i++) {
+    for (let i = 1; i < n; i++) {
         const key = arr[i];
         let j = i - 1;
 
@@ -85,9 +85,9 @@ console.log("Sorted array:", sortedArray);
 
 // Linear Search 
 function linearSearch(arr, target) {
-    const z = arr.length;
+    const n = arr.length;
 
-    for (let i = 0; i < z; i++) {
+    for (let i = 0; i < n; i++) {
         if (arr[i] === target) {
             return i; 
         }
